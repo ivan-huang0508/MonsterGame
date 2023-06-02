@@ -18,7 +18,7 @@ public class RolePicker extends VBox{
 	public RolePicker(ROLE role) {
 		
 		circleImage = new ImageView(circleNotChoose);
-		roleImage = new ImageView(role.getUrl());
+		roleImage = new ImageView(role.getRole().idleUrl);
 		this.role = role;
 		isCircleChoose = false;
 		this.setAlignment(Pos.CENTER);
@@ -26,7 +26,7 @@ public class RolePicker extends VBox{
 		this.getChildren().add(circleImage);
 		this.getChildren().add(roleImage);
 	}
-	
+
 	public ROLE getRole(){
 		return role;
 	}
@@ -38,6 +38,8 @@ public class RolePicker extends VBox{
 	public void setIsChoose(boolean isCircleChoose) {
 		this.isCircleChoose = isCircleChoose;
 		String imageToSet = this.isCircleChoose ? circleChoose : circleNotChoose;
+		String roleToset = this.isCircleChoose? this.role.getRole().attackUrl : this.role.getRole().idleUrl;
 		circleImage.setImage(new Image(imageToSet));
+		roleImage.setImage(new Image(roleToset));
 	}
 }

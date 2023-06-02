@@ -7,7 +7,6 @@ import java.util.List;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
-import javafx.scene.canvas.Canvas;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -48,7 +47,6 @@ public class ViewManager {
 	private AnchorPane mainPane;
 	private Scene mainScene;
 	private Stage mainStage;
-	private Canvas canvas;
 	private List<MenuButton> menuButtonList;
 	private List<RolePicker> roleList;
 	private ROLE chooseRole;
@@ -119,8 +117,8 @@ public class ViewManager {
 	
 	private MenuButton createStartButton() {
 		MenuButton startButton = new MenuButton("Go");
-		startButton.setLayoutX(300);
-		startButton.setLayoutY(350);
+		startButton.setLayoutX(213);
+		startButton.setLayoutY(330);
 		
 		startButton.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -156,7 +154,7 @@ public class ViewManager {
 			});
 		}
 		box.setLayoutX(100);
-		box.setLayoutY(125);
+		box.setLayoutY(115);
 		return box;
 	}
 	
