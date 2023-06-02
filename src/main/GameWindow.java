@@ -74,7 +74,7 @@ public class GameWindow {
 		});
 	}
 	
-	public void init() {
+	private void init() {
 		gamePane = new AnchorPane();
 		gameScene = new Scene(gamePane, screenWidth, screenHeight);
 		gameStage = new Stage();
@@ -84,6 +84,16 @@ public class GameWindow {
 	public void createNewGame(Stage menuStage, ROLE chooseRole ) {
 		this.menuStage = menuStage;
 		this.menuStage.hide();
+		createRole(chooseRole);
 		gameStage.show();
+	}
+	
+	private void createRole(ROLE chooseRole) {
+		role = new ImageView(chooseRole.getUrl());
+		role.setScaleX(0.5);
+		role.setScaleY(0.5);
+		role.setLayoutX(300);
+		role.setLayoutY(300);
+		gamePane.getChildren().add(role);
 	}
 }

@@ -1,13 +1,16 @@
 package ui_item;
 
+import entity.Warrior;
+
 public enum ROLE {
+
 	
-	
-	WARRIOR("resource/Player/Warrior/idle.gif"),
+	WARRIOR{
+		Warrior role = new Warrior();
+	},
 	WIZARD("resource/Player/Wizard/idle.gif");
 	
 	String urlRole;
-	
 	private ROLE(String urlRole) {
 		this.urlRole = urlRole;
 	}
