@@ -1,7 +1,8 @@
 package entity;
 
 public class Entity {
-	public int hp, speed, attack;
+	public int hp, attack;
+	public double speed;
 	public int x = 0;
 	public int y = 0;
 	public int attackcount;

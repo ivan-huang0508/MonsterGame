@@ -18,5 +18,12 @@ public class Warrior extends Player{
 		attack = 20;
 		attackSoundcount = 20;
 		skillSoundcount = 25;
+		attackRad = 55;
+	}
+
+	@Override
+	public void skill() {
+		invincibleCount = 0;
+		
 	}
 }

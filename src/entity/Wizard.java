@@ -19,5 +19,12 @@ public class Wizard extends Player{
 		skillcount = 135;
 		hitcount = 20;
 		attack = 10;
+		attackRad = 40;
+	}
+
+	@Override
+	public void skill() {
+		// TODO Auto-generated method stub
+		
 	}
 }
