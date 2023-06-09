@@ -7,16 +7,13 @@ public class Dino extends Monster{
 		hitUrl = "resource/Monster/dino/hit.gif";
 		attackUrl = "resource/Monster/dino/attack.gif";
 		skillUrl = "resource/Monster/dino/attack2.gif";
-		attackSoundUrl = "src/resource/dino/katana1.mp3";
-		skillSoundUrl = "src/resource/dino/flying_pan.mp3";
-		hitSoundUrl = "src/resource/dino/kick1.mp3";
 		
-		hp = 30;
-		speed = 2;
-		attack = 20;
+		hp = 50;
+		speed = 5;
+		attack = 15;
 		
-		attackcount = 100;
-		skillcount = 80;
+		attackcount = 80;
+		skillcount = 40;
 		
 		hitcount = 40;
 		attackSoundcount = 20;
@@ -24,7 +21,7 @@ public class Dino extends Monster{
 		
 		fitWidth = 106.5;
 		fitHeight = 109.5;
-		idleRad = 12;
+		idleRad = 20;
 		moveCount =50;
 		canBeAttackDis = 30;
 		
@@ -33,6 +30,13 @@ public class Dino extends Monster{
 		canUseSkillCount = 0;
 		canUseSkill =1;
 		
+		delayTimeCount = 0;
+		attackTimeCount = 50;
+		attackRad = 20;
+		skillRad = 40;
+		skillTimeCount = 28;
+		delayStatus = 0;
+		score = 200;
 		this.x = x2;
 		this.y = y2;
 	}

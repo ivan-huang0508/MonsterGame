@@ -18,6 +18,8 @@ import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.HBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import ui_item.CloseButton;
 import ui_item.InfoLabel;
@@ -160,7 +162,24 @@ public class ViewManager {
 	
 	private void createHelpSubscene() {
 		helpSubscene = createSubscene();
+		String helpContent = "『移動』                 『動作』\n\n"
+	            +"      UP 上\n\n"
+	            +"      LEFT 左                Q 攻擊\n\n"
+	            +"      RIGHT 右              W 特殊技能\n\n"
+	            +"      DOWN 下\n\n";
+	
+         
+		Text text = new Text(helpContent);//help內容
+
+
+
+
+		text.setFont(Font.font("Arial", 30));
+		// 建立 SubScene，並設置其寬度、高度以及要顯示的內容
+		helpSubscene = new MenuSubscene(text);
+		mainPane.getChildren().add(helpSubscene);
 		helpSubsceneCloseButton = createCloseButton(helpSubscene);
+		
 	}
 	
 	private void createPlayButton() {

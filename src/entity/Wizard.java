@@ -20,6 +20,7 @@ public class Wizard extends Player{
 		hitcount = 20;
 		attack = 10;
 		attackRad = 40;
+		score = 0;
 	}
 
 	@Override

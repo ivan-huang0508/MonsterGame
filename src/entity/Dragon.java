@@ -12,10 +12,10 @@ public class Dragon extends Monster{
 		hitSoundUrl = "src/resource/dragon/kick1.mp3";
 		
 		hp = 100;
-		speed = 20;
+		speed = 2;
 		attack = 30;
 		
-		attackcount = 100;
+		attackcount = 65;
 		skillcount = 80;
 		
 		hitcount = 40;
@@ -31,8 +31,15 @@ public class Dragon extends Monster{
 		basicCount = 1000;
 		
 		canUseSkillCount = 0;
-		canUseSkill =1;
+		canUseSkill =2;
 		
+		delayTimeCount = 0;
+		attackTimeCount = 30;
+		attackRad = 100;
+		skillRad = 120;
+		skillTimeCount = 50;
+		delayStatus = 0;
+		score = 400;
 		this.x = x2;
 		this.y = y2;
 	}

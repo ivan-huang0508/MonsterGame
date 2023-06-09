@@ -19,6 +19,7 @@ public class Warrior extends Player{
 		attackSoundcount = 20;
 		skillSoundcount = 25;
 		attackRad = 55;
+		score =0;
 	}
 
 	@Override

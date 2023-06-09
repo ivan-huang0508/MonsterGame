@@ -13,4 +13,12 @@ public class Monster extends Entity{
 	public int canUseSkill;
 	public int canUseSkillCount;
 	public int basicCount = 100;
+	
+	public int delayTimeCount = 0;
+	public int attackTimeCount;
+	public int skillTimeCount;
+	public int skillRad;
+	public int attackRad;
+	public int delayStatus = 0; //0 idle, 1 attack, 2 skill;
+	public int score;
 }

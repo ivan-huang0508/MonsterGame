@@ -7,15 +7,12 @@ public class Slime extends Monster{
 		hitUrl = "resource/Monster/slime/hit.gif";
 		attackUrl = "resource/Monster/slime/attack.gif";
 		skillUrl = "resource/Monster/slime/attack2.gif";
-		attackSoundUrl = "src/resource/Music/katana1.mp3";
-		skillSoundUrl = "src/resource/Music/flying_pan.mp3";
-		hitSoundUrl = "src/resource/Music/kick1.mp3";
 		
 		hp = 30;
-		speed = 1;
-		attack = 20;
+		speed = 2;
+		attack = 10;
 		
-		attackcount = 100;
+		attackcount = 40;
 		skillcount = 80;
 		
 		hitcount = 40;
@@ -33,6 +30,13 @@ public class Slime extends Monster{
 		canUseSkillCount = 0;
 		canUseSkill =1;
 		
+		delayTimeCount = 0;
+		attackTimeCount = 25;
+		attackRad = 20;
+		skillRad = 40;
+		skillTimeCount = 40;
+		delayStatus = 0;
+		score = 100;
 		this.x = x2;
 		this.y = y2;
 	}
